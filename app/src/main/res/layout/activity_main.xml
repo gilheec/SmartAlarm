@@ -19,8 +19,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"/>
+
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_go_enter_scr"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
@@ -45,7 +46,7 @@
             android:layout_height="match_parent"
             android:layout_weight="25"/>
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_status"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
