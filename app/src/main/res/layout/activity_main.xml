@@ -19,12 +19,12 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"/>
-
         <Button
             android:id="@+id/btn_go_enter_scr"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
+            android:onClick="onEnterScr"
             android:text="순번접수" />
         <TextView
             android:layout_width="0dp"
@@ -35,7 +35,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -50,6 +49,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
+            android:onClick="onStatusScr"
             android:text="대기정보조회" />
         <TextView
             android:layout_width="0dp"

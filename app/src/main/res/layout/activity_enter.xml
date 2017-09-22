@@ -21,29 +21,24 @@
             android:layout_weight="25"/>
 
         <Button
-            android:id="@+id/btn_search_branch"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
+            android:onClick="onBrlistScr"
             android:text="영업점 검색" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"/>
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="25"
+        android:layout_weight="30"
         android:text="Display Branch Information"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
