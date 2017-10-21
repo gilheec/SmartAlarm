@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.gilheec.smartalarm">
 
+    <!-- 통신 허용 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,16 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".EnterActivity" />
+        <activity android:name=".BrlistActivity" />
+        <activity android:name=".StatusActivity" />
+        <activity android:name=".WebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EnterActivity" />
-        <activity android:name=".BrlistActivity" />
-        <activity android:name=".StatusActivity" />
-        <activity android:name=".WebViewActivity"></activity>
     </application>
 
 </manifest>
