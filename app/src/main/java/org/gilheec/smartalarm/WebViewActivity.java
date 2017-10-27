@@ -3,6 +3,7 @@ package org.gilheec.smartalarm;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -30,9 +31,9 @@ import java.net.URL;
 import java.net.URLDecoder;
 
 public class WebViewActivity extends AppCompatActivity {
-    private static final String HOME_URL = "http://172.16.1.252/#!/";
-    private static final String SIGNUP_URL = "http://172.16.1.252/#!/signup";
-    private static final String USERLIST_URL = "http://172.16.1.252/#!/user/list";
+    private static final String HOME_URL = "http://172.16.1.252:9000/#!/";
+    private static final String SIGNUP_URL = "http://172.16.1.252:9000/#!/signup";
+    private static final String USERLIST_URL = "http://172.16.1.252:9000/#!/user/list";
     private WebView webView = null;
 
     final class WebBrowserClient extends WebChromeClient {
@@ -122,17 +123,37 @@ public class WebViewActivity extends AppCompatActivity {
         webView.setWebChromeClient(new WebBrowserClient());
         webView.setWebViewClient(new MyWebViewClient());
         webView.loadUrl(HOME_URL);
+
+        // 로그인한 상태인지 확인하고, 비로그인이면 로그인 화면으로 전환
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        if (pref.getString("token", "").equals("")) {
+            Intent intent = new Intent(WebViewActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+    // 로그아웃
+    public void logout(View view) {
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.remove("token");
+        editor.commit();
+        finish();
     }
 
     public void goHome(View view) {
         webView.loadUrl(HOME_URL+"?os=android&version=1.0&device=emul");
     }
+
     public void goSignup(View view) {
         webView.loadUrl(SIGNUP_URL);
     }
+
     public void goUserList(View view) {
         webView.loadUrl(USERLIST_URL);
     }
+
     public void closePopup(View view) {
         LinearLayout popup = (LinearLayout)findViewById(R.id.popup);
         popup.setVisibility(View.GONE);
