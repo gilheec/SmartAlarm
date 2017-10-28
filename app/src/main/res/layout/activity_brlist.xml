@@ -1,18 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="org.gilheec.smartalarm.BrlistActivity">
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="해당하는 영업점을 선택하세요"/>
+        android:layout_height="50dp"
+        android:text="해당하는 영업점을 선택하세요"
+        android:textSize="20sp"/>
 
-    <ListView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="광교영업부"
+            android:id="@+id/branch_name_1"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="서울 중구 청계천로 54"
+            android:id="@+id/address_1"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="012m"
+            android:id="@+id/position_1"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="선택"
+            android:onClick="onBrList01" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="3011"
+            android:id="@+id/branch_no_1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="서울롯데"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="서울특별시 중구 을지로 30,(롯데호텔)"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="272m"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="선택" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="3012"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="종각역"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="서울특별시 종로구 종로 33"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="301m"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="선택" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="3013"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="파이낸스센터"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="서울특별시 중구 세종대로 136,(파이낸스빌딩)"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="312m"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="선택" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="3014"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="광화문"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="서울특별시 중구 세종대로 135-5"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="452m"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="선택" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="3015"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
 </LinearLayout>

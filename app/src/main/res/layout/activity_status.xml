@@ -8,11 +8,38 @@
     tools:context="org.gilheec.smartalarm.StatusActivity">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:text="대기정보현황"/>
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="90"/>
+        android:layout_height="50dp"
+        android:text="대기정보현황"
+        android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="0012 - 호출 (대기시간 25분)"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="0013 - 호출 (대기시간 24분)"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="0014 - 대기 (대기시간 23분)"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="0015 - 대기 (대기시간 20분)"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="0016 - 대기 (대기시간 18분)"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
 </LinearLayout>

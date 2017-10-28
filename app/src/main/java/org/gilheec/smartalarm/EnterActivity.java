@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 public class EnterActivity extends AppCompatActivity {
 
@@ -15,6 +16,20 @@ public class EnterActivity extends AppCompatActivity {
     public void onBrlistScr(View view)
     {
         Intent intent = new Intent(EnterActivity.this, BrlistActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, 1);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case 1:
+                if (resultCode == RESULT_OK){
+                    String branchName = data.getStringExtra("branch_name");
+                    TextView branchNameText = (TextView)findViewById(R.id.branch_name);
+                    branchNameText.setText(branchName);
+                }
+                break;
+        }
+        //super.onActivityResult(requestCode, resultCode, data);
     }
 }
