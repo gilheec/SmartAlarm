@@ -24,9 +24,17 @@ public class EnterActivity extends AppCompatActivity {
         switch (requestCode) {
             case 1:
                 if (resultCode == RESULT_OK){
+                    String branchNo = data.getStringExtra("branch_no");
                     String branchName = data.getStringExtra("branch_name");
+                    String address = data.getStringExtra("address");
+
+                    TextView branchNoText = (TextView)findViewById(R.id.branch_no);
                     TextView branchNameText = (TextView)findViewById(R.id.branch_name);
+                    TextView addressText = (TextView)findViewById(R.id.address);
+
+                    branchNoText.setText(branchNo);
                     branchNameText.setText(branchName);
+                    addressText.setText(address);
                 }
                 break;
         }

@@ -15,31 +15,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
+        <ListView
+            android:id="@+id/listview"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="0012 - 호출 (대기시간 25분)"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="0013 - 호출 (대기시간 24분)"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="0014 - 대기 (대기시간 23분)"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="0015 - 대기 (대기시간 20분)"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="0016 - 대기 (대기시간 18분)"
-            android:textSize="18sp"/>
-    </LinearLayout>
+            android:layout_height="380dp">
+        </ListView>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:onClick="onBtnCancel"
+                android:text="순번등록취소" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:onClick="onBtnCall"
+                android:text="순번기호출" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
