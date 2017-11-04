@@ -8,12 +8,12 @@
     tools:context="org.gilheec.smartalarm.StatusActivity">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:text="대기정보현황"
-        android:textSize="24sp"/>
+        android:textSize="30sp"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <ListView
             android:id="@+id/listview"
@@ -23,22 +23,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
             android:orientation="horizontal">
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="40dp" />
+
             <Button
-                android:layout_width="100dp"
-                android:layout_height="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:onClick="onBtnCancel"
                 android:text="순번등록취소" />
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="40dp" />
+
             <Button
-                android:layout_width="100dp"
-                android:layout_height="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:onClick="onBtnCall"
                 android:text="순번기호출" />
         </LinearLayout>

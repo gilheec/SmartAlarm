@@ -38,19 +38,21 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:text="Display Branch number"/>
+        android:paddingLeft="2dp" />
+
     <TextView
         android:id="@+id/branch_name"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:text="Display Branch name"/>
+        android:paddingLeft="2dp" />
+
     <TextView
         android:id="@+id/address"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:text="Display Branch address"/>
+        android:paddingLeft="2dp" />
 
 
     <LinearLayout
@@ -63,7 +65,7 @@
             android:layout_height="match_parent"
             android:layout_weight="25"/>
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/orderno"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
@@ -92,6 +94,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
+            android:onClick="onSerno"
             android:text="순번 등록" />
         <TextView
             android:layout_width="0dp"

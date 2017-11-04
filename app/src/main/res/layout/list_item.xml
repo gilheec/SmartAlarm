@@ -7,24 +7,32 @@
         android:id="@+id/branch_name"
         android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:gravity="left|center_vertical"/>
+        android:gravity="left|center_vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/address"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:gravity="left|center_vertical"/>
+        android:gravity="left|center_vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/position"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:gravity="left|center_vertical"/>
+        android:gravity="left|center_vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/branch_no"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:gravity="left|center_vertical"/>
+        android:gravity="left|center_vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textSize="15sp" />
 </LinearLayout>
