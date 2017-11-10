@@ -25,19 +25,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="0dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnReflesh"
+                android:text="다시조회" />
+
+            <Button
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onBtnCancel"
-                android:text="순번등록취소" />
+                android:text="순번대기취소" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onBtnCall"
-                android:text="순번기호출" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
