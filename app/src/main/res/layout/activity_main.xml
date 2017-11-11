@@ -4,65 +4,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="100"
     tools:context="org.gilheec.smartalarm.MainActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="15"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25" />
-
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="순번 알람 서비스"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
         <Button
             android:id="@+id/btn_go_enter_scr"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_purple"
             android:onClick="onEnterScr"
-            android:text="순번접수" />
-
+            android:text="순번접수"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25" />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="15"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"/>
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
         <Button
             android:id="@+id/btn_status"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_purple"
             android:onClick="onStatusScr"
-            android:text="대기정보조회" />
+            android:text="대기정보조회"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="25"/>
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="bottom|center"
+            android:text="Shinhan Bank"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="40"/>
 </LinearLayout>

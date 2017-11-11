@@ -24,8 +24,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
+            android:background="@android:color/holo_purple"
             android:onClick="onBrlistScr"
-            android:text="영업점 검색" />
+            android:text="영업점 검색"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="0dp"
@@ -38,21 +41,25 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:paddingLeft="2dp" />
+        android:paddingLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"/>
 
     <TextView
         android:id="@+id/branch_name"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:paddingLeft="2dp" />
+        android:paddingLeft="20dp"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/address"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:paddingLeft="2dp" />
+        android:paddingLeft="20dp"
+        android:textSize="18sp"/>
 
 
     <LinearLayout
@@ -71,6 +78,7 @@
             android:layout_weight="50"
             android:ems="10"
             android:inputType="number"
+            android:textSize="24sp"
             android:gravity="center"/>
         <TextView
             android:layout_width="0dp"
@@ -96,7 +104,10 @@
             android:layout_height="match_parent"
             android:layout_weight="50"
             android:onClick="onSerno"
-            android:text="순번 등록" />
+            android:background="@android:color/holo_purple"
+            android:text="순번 등록"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"

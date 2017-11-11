@@ -6,10 +6,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="해당하는 영업점을 선택하세요"
-        android:textSize="20sp"/>
+        android:text="영업점을 선택하세요"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"></ListView>
 </LinearLayout>

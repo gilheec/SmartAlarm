@@ -2,6 +2,7 @@ package org.gilheec.smartalarm;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -72,7 +73,6 @@ public class StatusActivity extends AppCompatActivity {
             } else {
                 text1View.setText(item.status_ctnt);
             }
-
 
             return convertView;
         }
@@ -179,12 +179,12 @@ public class StatusActivity extends AppCompatActivity {
 
                 if (json.getBoolean("result") == true) { //통신 성공
 
-
                     Log.d("debug", "bbbbbb");
+
+                    itemList.clear();
 
                     JSONArray ny_array = json.getJSONArray("ny");
 
-                    itemList.clear(); //chon
                     for (int ix = 0; ix < ny_array.length(); ix++)
                     {
                         JSONObject obj = ny_array.getJSONObject(ix);
@@ -325,6 +325,9 @@ public class StatusActivity extends AppCompatActivity {
                 if (json.getBoolean("result") == true) { //통신 성공
 
                     Log.d("debug", "eeeeeeeeeeeeeeeeeeeee");
+                    Intent intent = new Intent(StatusActivity.this, EnterActivity.class);
+                    startActivity(intent);
+
                     finish();
 
                 } else { //통신 실패
@@ -338,6 +341,5 @@ public class StatusActivity extends AppCompatActivity {
             } catch (Exception e) { e.printStackTrace(); }
         }
     }
-
 
 }
